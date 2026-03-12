@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Still Her Dad — A Guide for Divorced Fathers Reconnecting With Their Daughters</title>
+  <meta name="description" content="She doesn't feel close to you anymore. This guide helps divorced dads rebuild the bond they're afraid they've lost for good. $17 — instant download." />
+  <style>
+    :root {
+      --navy: #1a1a2e;
+      --blue: #0f3460;
+      --gold: #c9a84c;
+      --gold-light: #e8d5b7;
+      --cream: #fdf9f4;
+      --gray: #6b7280;
+      --text: #1f2937;
+      --border: #e5e7eb;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text);
+      background: white;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(26, 26, 46, 0.97);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-logo {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-cta {
+      background: var(--gold);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: #b8952a; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(160deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: white;
+      padding: 140px 24px 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 60% 40%, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.35);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 780px;
+      margin: 0 auto 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 20px);
+      color: rgba(255,255,255,0.75);
+      max-width: 580px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      padding: 18px 44px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.15s, background 0.2s;
+      box-shadow: 0 4px 24px rgba(201, 168, 76, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: #b8952a;
+      transform: translateY(-2px);
+    }
+
+    .btn-guarantee {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-guarantee svg { opacity: 0.6; }
+
+    .hero-img-hint {
+      margin-top: 64px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .ebook-cover {
+      width: 200px;
+      height: 280px;
+      background: linear-gradient(145deg, #1e3a5f, #0f2e4a);
+      border-radius: 6px 12px 12px 6px;
+      box-shadow: -6px 6px 30px rgba(0,0,0,0.5), 4px 0 12px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 20px;
+      text-align: center;
+      position: relative;
+      border-left: 4px solid var(--gold);
+    }
+
+    .ebook-cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 6px 12px 12px 6px;
+      background: linear-gradient(90deg, rgba(201,168,76,0.05) 0%, transparent 40%);
+    }
+
+    .ebook-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .ebook-subtitle {
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+    }
+
+    /* SECTION SHARED */
+    section { padding: 80px 24px; }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .container-wide {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--navy);
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-body {
+      font-size: 17px;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* PROBLEM */
+    .problem {
+      background: var(--cream);
+    }
+
+    .problem-list {
+      list-style: none;
+      margin-top: 32px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .problem-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .problem-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .problem-text {
+      font-size: 16px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .problem-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    /* AGITATION */
+    .agitation {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .agitation .section-title {
+      color: white;
+    }
+
+    .agitation .section-body {
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .truth-box {
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 16px;
+      padding: 32px 40px;
+      margin-top: 40px;
+      font-size: 18px;
+      font-style: italic;
+      color: var(--gold-light);
+      line-height: 1.65;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* SOLUTION */
+    .solution {
+      background: white;
+    }
+
+    .chapter-grid {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .chapter-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+
+    .chapter-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    .chapter-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .chapter-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--navy);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .chapter-desc {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      background: var(--cream);
+    }
+
+    .testimonial-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text);
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .reviewer {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .reviewer-title {
+      font-size: 12px;
+      color: var(--gray);
+      font-weight: 400;
+    }
+
+    /* PRICING */
+    .pricing {
+      background: white;
+      text-align: center;
+    }
+
+    .price-box {
+      max-width: 480px;
+      margin: 40px auto 0;
+      border: 2px solid var(--navy);
+      border-radius: 20px;
+      padding: 48px 40px;
+      position: relative;
+    }
+
+    .price-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .price-amount {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .price-period {
+      font-size: 15px;
+      color: var(--gray);
+      margin-bottom: 32px;
+    }
+
+    .price-includes {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .price-includes li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .check {
+      color: var(--gold);
+      font-size: 16px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .btn-buy {
+      display: block;
+      background: var(--navy);
+      color: white;
+      padding: 18px 44px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.15s, background 0.2s;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(26, 26, 46, 0.25);
+    }
+
+    .btn-buy:hover {
+      background: #0f2040;
+      transform: translateY(-2px);
+    }
+
+    .guarantee-text {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* FAQ */
+    .faq {
+      background: var(--cream);
+    }
+
+    .faq-list {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .faq-q.open::after { content: '−'; }
+
+    .faq-a {
+      display: none;
+      padding: 0 24px 20px;
+      font-size: 15.5px;
+      line-height: 1.65;
+      color: var(--gray);
+    }
+
+    .faq-a.visible { display: block; }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: linear-gradient(160deg, #1a1a2e, #0f3460);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta .section-title { color: white; max-width: 600px; margin: 0 auto 12px; }
+    .final-cta .section-body { color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 40px; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero { padding: 120px 20px 80px; }
+      .price-box { padding: 40px 28px; margin: 40px 0 0; }
+      .truth-box { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Still Her Dad</div>
+  <a href="#buy" class="nav-cta">Get the Guide — $17</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">For Divorced Dads Who Haven't Given Up</div>
+    <h1>She feels like a <em>stranger.</em><br>Here's how to change that.</h1>
+    <p class="hero-sub">
+      A practical, honest guide for divorced fathers rebuilding the father-daughter bond — even when the distance feels impossible to cross.
+    </p>
+    <div class="hero-cta-group">
+      <a href="#buy" class="btn-primary">Get the Guide for $17 →</a>
+      <span class="btn-guarantee">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        Instant download · 30-day guarantee
+      </span>
+    </div>
+    <div class="hero-img-hint">
+      <div class="ebook-cover">
+        <div class="ebook-title">Still Her Dad</div>
+        <div class="ebook-subtitle">A Guide for Divorced Fathers Reconnecting With Their Daughters</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <div class="section-label">The Reality</div>
+    <h2 class="section-title">You love her. But something broke — and you're not sure how to fix it.</h2>
+    <p class="section-body">Divorce doesn't just divide a household. It can quietly unravel the most important relationship in a daughter's life. If any of this sounds familiar, you're not alone:</p>
+
+    <ul class="problem-list">
+      <li class="problem-item">
+        <span class="problem-icon">📵</span>
+        <div class="problem-text">
+          <strong>She doesn't call. Barely texts back.</strong>
+          Every unanswered message feels like confirmation that you've already lost her.
+        </div>
+      </li>
+      <li class="problem-item">
+        <span class="problem-icon">🧊</span>
+        <div class="problem-text">
+          <strong>Visits feel cold and scripted.</strong>
+          You sit across from each other and can't find the words. The silence is deafening.
+        </div>
+      </li>
+      <li class="problem-item">
+        <span class="problem-icon">😤</span>
+        <div class="problem-text">
+          <strong>She's angry — and you don't know why.</strong>
+          Or maybe you do, and that's worse. Either way, every conversation ends in tension.
+        </div>
+      </li>
+      <li class="problem-item">
+        <span class="problem-icon">🤷</span>
+        <div class="problem-text">
+          <strong>You want to reach out, but don't know how.</strong>
+          Every attempt feels clumsy, forced, or too late. You're afraid of making it worse.
+        </div>
+      </li>
+      <li class="problem-item">
+        <span class="problem-icon">⏳</span>
+        <div class="problem-text">
+          <strong>You're watching her grow up without you.</strong>
+          And the longer you wait, the harder it feels to break through.
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- AGITATION -->
+<section class="agitation">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold);">The Hard Truth</div>
+    <h2 class="section-title">The distance won't close itself.</h2>
+    <p class="section-body">
+      Research on attachment and post-divorce family dynamics is clear: the father-daughter relationship requires consistent, intentional effort to survive a family rupture. Hoping time heals it — without action — usually makes it worse.
+    </p>
+    <div class="truth-box">
+      "Daughters of divorced dads who feel emotionally abandoned are significantly more likely to struggle with trust, self-worth, and relationships in adulthood. But dads who actively reconnect? The bond can become stronger than it ever was before."
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="solution">
+  <div class="container-wide">
+    <div class="container">
+      <div class="section-label">The Solution</div>
+      <h2 class="section-title">10 chapters. Real tools. No platitudes.</h2>
+      <p class="section-body">
+        <em>Still Her Dad</em> is a practical, emotionally honest guide built around what actually works — not vague advice or guilt trips. Each chapter gives you specific tools you can use today.
+      </p>
+    </div>
+
+    <div class="chapter-grid">
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 1</div>
+        <div class="chapter-title">Understanding What Your Daughter Is Going Through</div>
+        <div class="chapter-desc">See the divorce through her eyes — her fears, her confusion, her need for you even when she hides it.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 2</div>
+        <div class="chapter-title">The Unique Challenges of Being a Divorced Dad</div>
+        <div class="chapter-desc">Guilt, limited time, co-parenting conflict — understand the real obstacles so you can actually clear them.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 3</div>
+        <div class="chapter-title">Healing Yourself First</div>
+        <div class="chapter-desc">You can't pour from an empty cup. This chapter gives you permission — and tools — to do the inner work.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 4</div>
+        <div class="chapter-title">Communication That Actually Works</div>
+        <div class="chapter-desc">Specific phrases, timing strategies, and formats that open her up instead of shutting her down.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 5</div>
+        <div class="chapter-title">Rebuilding Trust After the Distance</div>
+        <div class="chapter-desc">Trust takes time — but it also takes specific, consistent behaviors. Here's the blueprint.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 6</div>
+        <div class="chapter-title">Shared Experiences: The Shortcut to Connection</div>
+        <div class="chapter-desc">Activity ideas and experience frameworks that create genuine bonding without forcing it.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 7</div>
+        <div class="chapter-title">Navigating the Hard Conversations</div>
+        <div class="chapter-desc">Scripts and frameworks for the conversations you've been avoiding — and how to have them without it blowing up.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 8</div>
+        <div class="chapter-title">When She Pulls Away — What It Really Means</div>
+        <div class="chapter-desc">Don't take the withdrawal personally. Learn what's actually happening and how to stay steady.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 9</div>
+        <div class="chapter-title">Working With Her Other Parent</div>
+        <div class="chapter-desc">Even when the co-parenting relationship is hard — practical strategies that protect your daughter from the crossfire.</div>
+      </div>
+      <div class="chapter-card">
+        <div class="chapter-num">Chapter 10</div>
+        <div class="chapter-title">The Long Game — Building a Bond That Lasts</div>
+        <div class="chapter-desc">This isn't a sprint. Here's how to sustain connection through her teens, college years, and beyond.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-label">What Readers Say</div>
+    <h2 class="section-title">Real dads. Real results.</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I hadn't had a real conversation with my daughter in almost two years. Three weeks after reading this, she called me — just to talk. I'm not exaggerating when I say this changed everything."</p>
+        <div class="reviewer">Marcus T.</div>
+        <div class="reviewer-title">Divorced dad, daughter age 16</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Every other resource made me feel judged. This one made me feel like the author actually understood what it's like to be a dad on the outside looking in. Chapter 4 alone was worth 10x the price."</p>
+        <div class="reviewer">David R.</div>
+        <div class="reviewer-title">Divorced dad, daughter age 13</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I've been trying to get back to my daughter for four years. This gave me a framework I could actually execute. We're not perfect, but we're talking again. That's everything."</p>
+        <div class="reviewer">James K.</div>
+        <div class="reviewer-title">Divorced dad, daughter age 19</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="buy">
+  <div class="container">
+    <div class="section-label">Get Started Today</div>
+    <h2 class="section-title">One small investment. A lifetime of connection.</h2>
+    <p class="section-body">Every day without a real connection is a day that doesn't come back. This guide gives you a clear path forward — starting today.</p>
+
+    <div class="price-box">
+      <div class="price-badge">Instant Download</div>
+      <div class="price-amount">$17</div>
+      <div class="price-period">One-time payment. No subscription.</div>
+
+      <ul class="price-includes">
+        <li><span class="check">✓</span> Full e-book — 10 chapters, 40+ pages</li>
+        <li><span class="check">✓</span> Conversation starters &amp; scripts</li>
+        <li><span class="check">✓</span> Activity ideas for every situation</li>
+        <li><span class="check">✓</span> Attachment theory explained simply</li>
+        <li><span class="check">✓</span> Co-parenting conflict strategies</li>
+        <li><span class="check">✓</span> Instant PDF download</li>
+        <li><span class="check">✓</span> 30-day money-back guarantee</li>
+      </ul>
+
+      <a href="https://stillherdad.gumroad.com/l/guide" class="btn-buy" id="gumroad-link">
+        Get Still Her Dad — $17 →
+      </a>
+      <p class="guarantee-text">
+        🔒 Secure checkout via Gumroad · PDF delivered instantly
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-label">Questions</div>
+    <h2 class="section-title">Frequently asked</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Is this only for recent divorces?</div>
+        <div class="faq-a">Not at all. The guide is designed for dads at any stage — whether you're newly divorced or the distance has been growing for years. The principles work regardless of how long it's been.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if she won't talk to me at all?</div>
+        <div class="faq-a">Chapter 8 specifically addresses this — what withdrawal really means and how to stay steady without pushing her further away. Many dads in complete silence have used these approaches to gradually reopen the door.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">My daughter is a teenager. Is this relevant?</div>
+        <div class="faq-a">Absolutely. The guide covers the full age range from young girls through young adulthood, with specific attention to the unique dynamics of teenage daughters — the developmental stage where most dad-daughter rifts deepen.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if the co-parenting relationship is really bad?</div>
+        <div class="faq-a">Chapter 9 is dedicated to co-parenting in difficult circumstances — high-conflict situations, alienation dynamics, and how to protect your daughter from being caught in the middle, even when cooperation isn't possible.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What format is the book? How do I get it?</div>
+        <div class="faq-a">It's a PDF e-book delivered instantly after purchase via Gumroad. You can read it on any device — phone, tablet, computer, or print it out.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's your refund policy?</div>
+        <div class="faq-a">30-day money-back guarantee, no questions asked. If you read it and it doesn't help, just email us and we'll refund you immediately.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold);">She needs you</div>
+    <h2 class="section-title">You're still her dad. Let's make sure she knows it.</h2>
+    <p class="section-body">You picked this up because you haven't given up on her. That matters more than you know. Now let's give you the tools to show her.</p>
+    <a href="#buy" class="btn-primary">Get Still Her Dad — $17 →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Still Her Dad. All rights reserved.</p>
+  <p style="margin-top: 6px;">Questions? <a href="mailto:hello@stillherdad.com" style="color: rgba(255,255,255,0.5);">hello@stillherdad.com</a></p>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = q.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(oq => {
+        oq.classList.remove('open');
+        oq.nextElementSibling.classList.remove('visible');
+      });
+      if (!isOpen) {
+        q.classList.add('open');
+        q.nextElementSibling.classList.add('visible');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
